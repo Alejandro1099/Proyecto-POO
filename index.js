@@ -3,6 +3,7 @@ const app = express()
 const port = 3000
 var bodyParser = require('body-parser');
 const cors = require('cors');
+var database = require('./Backend-App/modules/database');
 var motoristaRouter = require('./Backend-App/routes/motorista-router');
 
 

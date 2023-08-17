@@ -1,54 +1,77 @@
 var express = require('express');
 var router = express.Router();
-
-
-/*Este es un objeto de prueba*/
-var motoristas = [{
-    nombre: 'Juan',
-    correo: 'Juan123@yahoo.es',
-    foto: 'https://e0.pxfuel.com/wallpapers/558/38/desktop-wallpaper-vai-pro-perfil-essa-personagens-de-anime-tudo-anime-anime-kakashi-1080x1080.jpg'
-}];
+var motorista = require('../models/motorista');
 
 //crear un nuevo motorista
 router.post('/', function(req, res){
-    let motorista = {
-    nombre: req.body.nombre,
-    correo: req.body.correo,
-    foto: req.body.foto
-    }
-    motoristas.push(motorista);
-    res.send({CodigoResultado:1, mensaje:'Registro guardado', motoristaGuardado: motorista});
+    let nuevoMotorista = new motorista({
+        nombre: req.body.nombre,
+        correo: req.body.correo,
+        foto: req.body.foto
+    });
+    nuevoMotorista.save().then(result=>{
+        res.send(result);
+        res.end();
+    }).catch(error=>{
+        res.send(error);
+        res.end();
+    })
 })
 
 //obtener un solo motorista
 router.get('/:id', function(req, res){
-    if(req.params.id > (motoristas.length-1)){
-        res.send({CodigoResultado:0, mensaje:"Motorista no existe en los registros"});
-    }else{
-        res.send(motoristas[req.params.id]);
-    }
-})
+    motorista.find({_id:req.params.id}).then(result=>{
+        res.send(result[0]);
+        res.end();
+    }).catch(error=>{
+        res.send(error);
+        res.end();
+    });
+});
 
 //obtener todos los motoristas
 router.get('/', function(req, res){
-    res.send(motoristas);
-})
+    motorista.find().then(result=>{
+        res.send(result);
+        res.end();
+    }).catch(error=>{
+        res.send(error);
+        res.end();
+    });
+});
 
 //actualizar un motorista
 router.put('/:id', function(req, res){
-    let motorista = {
-        nombre: req.body.nombre,
-        correo: req.body.correo,
-        foto: req.body.foto
+    motorista.findByIdAndUpdate(
+        {
+            _id : req.params.id 
+        },
+        {
+            nombre: req.body.nombre,
+            correo: req.body.correo,
+            foto: req.body.foto
         }
-
-    motoristas[req.params.id] = motorista;
-    res.send({CodigoResultado:1, mensaje:"Motorista actualizado"})
-})
+    ).then(result=>{
+        res.send(result);
+        res.end();
+    }).catch(error=>{
+        res.send(error);
+        res.end();
+    });
+});
 
 router.delete('/:id', function(req, res){
-    motoristas.splice(req.params.id, 1); //splice recibe el indeice y el elemento a borrar
-    res.send({CodigoResultado:1, mensaje:"Motorista eliminado"})
+    motorista.findByIdAndRemove(
+        {
+            _id: req.params.id
+        }
+    ).then(result=>{
+        res.send(result);
+        res.end();
+    }).catch(error=>{
+        res.send(error);
+        res.end();
+    });
 })
 
 module.exports = router; //exportando el objeto completo
