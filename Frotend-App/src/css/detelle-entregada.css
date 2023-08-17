@@ -1,0 +1,248 @@
+header{
+    box-sizing: border-box;
+    position: absolute;
+    width: 390px;
+    height: 100px;
+    left: 0px;
+    top: 0px;
+    background: #5A67A6;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+p{
+    position: absolute;
+    width: 163px;
+    height: 36px;
+    left: 122px;
+    top: 17px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+
+#menu{
+    position: absolute;
+    width: 353px;
+    height: 54px;
+    left: 18px;
+    top: 711px;
+    background: #A6AFFF;
+    border-radius: 15px;
+}
+
+.fa-star, .fa-2xl, .fa-solid{
+    position: absolute;
+width: 34px;
+height: 34px;
+left: 20px;
+top: 25px;
+}
+
+.fa-clock{
+    position: absolute;
+width: 34px;
+height: 34px;
+left: 165px;
+top: 25px;
+}
+
+#mapa{
+    position: absolute;
+width: 289px;
+height: 221px;
+left: 51px;
+top: 123px;
+}
+
+#opcion1{
+    position: absolute;
+width: 353px;
+height: 170px;
+left: 18px;
+top: 405px;
+
+background: rgba(166, 175, 255, 0.4);
+border-radius: 15px;
+}
+
+#comida{
+    position: absolute;
+    width: 128px;
+    height: 14px;
+    left: 16px;
+    top: 23px;
+    
+    font-family: 'Istok Web';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    
+    color: #000000;
+}
+
+#descripcion{
+    position: absolute;
+    width: 186px;
+    height: 70px;
+    left: 16px;
+    top: 42px;
+    
+    font-family: 'Istok Web';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    
+    color: #000000;
+}
+
+#precio{
+    position: absolute;
+    width: 42px;
+    height: 14px;
+    left: 18px;
+    top: 141px;
+    
+    font-family: 'Istok Web';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    
+    color: #000000;    
+}
+
+#menu1{
+    position: absolute;
+    width: 125px;
+    height: 102px;
+    left: 213px;
+    top: 31px;
+}
+
+#ganancia{
+    position: absolute;
+    width: 353px;
+    height: 56px;
+    left: 18px;
+    top: 589px;
+    
+    background: rgba(166, 175, 255, 0.4);
+    border-radius: 15px;
+}
+
+#ganancia1{
+    position: absolute;
+    width: 159px;
+    height: 18px;
+    left: 15px;
+    top: 19px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    
+    color: #000000;
+}
+
+#gananciaobtenida{
+    position: absolute;
+    width: 59px;
+    height: 18px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    left: 292px;
+    color: #000000;
+    top: 19px;
+}
+
+#bien{
+    position: absolute;
+    width: 353px;
+    height: 27px;
+    left: 18px;
+    top: 655px;
+    
+    background: rgba(129, 230, 139, 0.7);
+    border-radius: 15px;
+}
+
+#feli{
+    position: absolute;
+    width: 173px;
+    height: 12px;
+    left: 118px;
+    top: 9px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    
+    color: #000000;
+}
+
+#tomar{
+    position: absolute;
+    width: 145px;
+    height: 27px;
+    left: 18px;
+    top: 655px;
+    
+    background: rgba(129, 230, 139, 0.7);
+    border-radius: 15px;
+}
+
+#no{
+    position: absolute;
+    width: 145px;
+    height: 27px;
+    left: 226px;
+    top: 655px;
+    
+    background: rgba(242, 151, 151, 0.7);
+    border-radius: 15px;
+}
+
+#sitomar{
+    position: absolute;
+    width: 94px;
+    height: 12px;
+    left: 57px;
+    top: 7px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    
+    color: #000000;
+}
+
+#notomar{
+    position: absolute;
+width: 99px;
+height: 12px;
+left: 59px;
+top: 7px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 12px;
+
+color: #000000;
+}

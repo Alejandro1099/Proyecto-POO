@@ -1,0 +1,148 @@
+header{
+    box-sizing: border-box;
+    position: absolute;
+    width: 390px;
+    height: 100px;
+    left: 0px;
+    top: 0px;
+    background: #5A67A6;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+p{
+    position: absolute;
+    width: 152px;
+    height: 36px;
+    left: 18px;
+    top: 17px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+
+#comidas{
+    position: absolute;
+    width: 353px;
+    height: 170px;
+    left: 18px;
+    top: 142px;
+    background: rgba(90, 103, 166, 0.78);
+    border-radius: 15px;
+}
+
+#hogar{
+    position: absolute;
+    width: 353px;
+    height: 170px;
+    left: 18px;
+    top: 331px;
+    background: rgba(90, 125, 166, 0.78);
+    border-radius: 15px;
+}
+
+#varios{
+    position: absolute;
+    width: 353px;
+    height: 170px;
+    left: 18px;
+    top: 522px;
+    background: #A6AFFF;
+    border-radius: 15px;
+}
+
+#menu{
+    position: absolute;
+    width: 353px;
+    height: 54px;
+    left: 18px;
+    top: 711px;
+    background: #A6AFFF;
+    border-radius: 15px;
+}
+
+label{
+    position: absolute;
+    width: 128px;
+    height: 14px;
+    left: 19px;
+    top: 14px;
+    font-family: 'Istok Web';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 14px;
+    color: #000000;
+}
+
+#titulo1{
+    position: absolute;
+    width: 69px;
+    height: 14px;
+    left: 40px;
+    top: 140px;
+    font-family: 'Istok Web';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    color: #000000;
+}
+
+#titulo2{
+    position: absolute;
+    width: 39px;
+    height: 14px;
+    left: 166px;
+    top: 140px;
+    font-family: 'Istok Web';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    color: #000000;
+}
+
+#titulo3{
+    position: absolute;
+    width: 39px;
+    height: 14px;
+    left: 276px;
+    top: 140px;
+    font-family: 'Istok Web';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    color: #000000;
+}
+
+#portada1{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 19px;
+    top: 35px;
+    border-radius: 10px;
+}
+
+#portada2{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 130px;
+    top: 35px;
+    border-radius: 10px;
+}
+
+#portada3{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 240px;
+    top: 37px;
+    border-radius: 10px;
+}

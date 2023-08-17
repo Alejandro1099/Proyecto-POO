@@ -1,0 +1,87 @@
+/*Estilos de la pagina de inicio de sesion*/
+.contenedor {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    background: #5A67A6;
+}
+
+img {
+    position: absolute;
+    width: 420px;
+    left: 220px;
+    top: 106px;
+    height: 420px;
+}
+
+hr {
+    position: absolute;
+    height: 0px;
+    left: 516px;
+    top: 320px;
+    border: 2px solid #FFFFFF;
+    transform: rotate(-90deg);
+    width: 450px;
+}
+
+/*estilos del formulario*/
+
+#name {
+    position: absolute;
+    height: 28px;
+    left: 825px;
+    top: 180px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.85);
+    width: 355px;
+}
+
+#nombre {
+    position: absolute;
+    height: 39px;
+    left: 825px;
+    top: 212px;
+    width: 340px;
+    background: #D9D9D9;
+    border-radius: 10px;
+}
+
+#contra{
+    position: absolute;
+    width: 154px;
+    height: 27px;
+    left: 825px;
+    top: 274px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.85);
+}
+
+#pass{
+    position: absolute;
+    width: 340px;
+    height: 39px;
+    left: 825px;
+    top: 305px;
+    background: #D9D9D9;
+    border-radius: 10px;
+}
+
+button{
+    position: absolute;
+    width: 346px;
+    height: 52px;
+    left: 827px;
+    top: 377px;
+    background: #F7C873;
+    border-radius: 16px;
+}

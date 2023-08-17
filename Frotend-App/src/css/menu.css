@@ -1,0 +1,138 @@
+header{
+    box-sizing: border-box;
+
+position: absolute;
+width: 390px;
+height: 38px;
+left: 0px;
+top: 0px;
+
+background: #5A67A6;
+border: 1px solid #000000;
+}
+
+#portada1{
+    position: absolute;
+width: 390px;
+height: 181px;
+left: 0px;
+top: 37px;
+}
+
+#logo-empresa{
+    position: absolute;
+    width: 134px;
+    height: 130px;
+    left: 121px;
+    top: 122px;
+    border-radius: 180px;
+}
+
+#opcion1{
+    position: absolute;
+width: 353px;
+height: 170px;
+left: 18px;
+top: 263px;
+
+background: rgba(180, 128, 221, 0.4);
+border-radius: 15px;
+}
+
+#opcion2{
+    position: absolute;
+width: 353px;
+height: 170px;
+left: 19px;
+top: 454px;
+
+background: rgba(180, 128, 221, 0.4);
+border-radius: 15px;
+}
+
+#opcion3{
+    position: absolute;
+width: 353px;
+height: 170px;
+left: 18px;
+top: 645px;
+
+background: rgba(180, 128, 221, 0.4);
+border-radius: 15px;
+}
+
+#menu1{
+    position: absolute;
+    width: 125px;
+    height: 102px;
+    left: 211px;
+    top: 30px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+#menu2{
+    position: absolute;
+width: 125px;
+height: 102px;
+left: 211px;
+top: 30px;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+#menu3{
+    position: absolute;
+width: 125px;
+height: 102px;
+left: 211px;
+top: 30px;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+#comida{
+    position: absolute;
+    width: 128px;
+    height: 14px;
+    left: 36px;
+    top: 30px;
+    
+    font-family: 'Istok Web';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    
+    color: #000000;
+    
+}
+
+#descripcion{
+    position: absolute;
+    width: 186px;
+    height: 70px;
+    left: 18px;
+    top: 49px;
+    
+    font-family: 'Istok Web';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    
+    color: #000000;
+}
+
+#precio{
+    position: absolute;
+    width: 42px;
+    height: 14px;
+    left: 20px;
+    top: 143px;
+    
+    font-family: 'Istok Web';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    
+    color: #000000;
+}

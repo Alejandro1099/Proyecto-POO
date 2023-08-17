@@ -1,0 +1,82 @@
+body{
+    background-color: #5A67A6;
+    ;
+}
+
+#logo{
+    width: 80%;
+    height: 80%;
+    position: relative;
+    margin-left: 21px;
+    margin-top: 47px;
+}
+
+label{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    transition: .5s;
+}
+
+#nombre{
+    position: absolute;
+    width: 152px;
+    height: 15px;
+    left: 90px;
+    top: 349px;
+}
+
+#contra{
+    position: absolute;
+    width: 66px;
+    height: 15px;
+    left: 90px;
+    top: 422px;
+}
+
+input{
+    position: absolute;
+    width: 210px;
+    height: 29px;
+    left: 90px;
+    background: #D9D9D9;
+    border-radius: 10px;
+}
+
+#name{
+    top: 371px;
+}
+
+#pass{
+    top: 444px;
+}
+
+button{
+    position: absolute;
+    width: 210px;
+    height: 29px;
+    left: 90px;
+    top: 509px;
+    background: #F7C873;
+    border-radius: 16px;
+}
+
+#registrarse{
+    position: absolute;
+    width: 191px;
+    height: 15px;
+    left: 122px;
+    top: 558px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FFFFFF;
+}
+
+label:hover{
+    background-color: #F7C873;
+}
