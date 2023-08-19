@@ -13,4 +13,15 @@ router.get('/', function(req, res){
     });
 });
 
+//obtener una sola empresa
+router.get('/:id', function(req, res){
+    empresa.find({_id:req.params.id}).then(result =>{ 
+        res.send(result[0]);
+        res.end();
+    }).catch(error =>{
+        res.send(error);
+        res.end();
+    });
+})
+
 module.exports = router;

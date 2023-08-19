@@ -1,4 +1,5 @@
 let empresas_lista;
+let unaEmpresa;
 
 const cargarEmpresas = async()=>{
     const respuesta = await fetch('http://localhost:3000/empresas', {
@@ -37,3 +38,34 @@ cargarEmpresas().then(()=>{
     }).catch((error)=>{
         console.log(`Error al obtener las empresas ${error}`)
 });
+
+/*const empresaUnica = async () => {
+    const respuesta = await fetch('http://localhost:3000/empresas/:id', {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    });
+    unaEmpresa = await respuesta.json();
+    console.log("Empresa: ", unaEmpresa);
+}*/
+
+/*const renderizarEmpresaUnica = () => {
+    document.getElementById("form_empresa").innerHTML = `
+        <img src="${unaEmpresa.foto}" alt="logo de empresas" id="logo-empresa">
+        
+        <form action="">
+            <label id="name-empresa">Nombre de la empresa</label>
+            <input type="text" placeholder="${unaEmpresa.nombre}" id="txt-name">
+            <label id="atencion">${unaEmpresa.descripcion}</label>
+            <button id="save">Guardar</button>
+            <button id="delete">Eliminar</button>
+            <button id="update">Actualizar</button>
+        </form>`;
+}
+
+empresaUnica().then(() => {
+    renderizarEmpresaUnica();
+}).catch((error) => {
+    console.log(`Error al obtener la empresa ${error}`);
+});*/
