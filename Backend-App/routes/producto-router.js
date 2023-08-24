@@ -15,7 +15,7 @@ router.post('/', function(req, res){
     );
     
     item.save().then(result =>{
-        res.send("Producto registrado con exito", result);
+        res.status(200).send('Elemento guardado');
         res.end();
     }).catch(error=>{
         res.send(error);

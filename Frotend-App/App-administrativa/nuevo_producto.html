@@ -7,7 +7,7 @@
     <script src="https://kit.fontawesome.com/21906a278f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../src/css/principal.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <title>Registrar Empresa</title>
+    <title>Registrar Producto</title>
 </head>
 <body>
     <div class="menu">
@@ -17,41 +17,43 @@
     
     <div class="formulario">
         <form action="" method="post" id="form_empresa">
-            <label id="name-empresa">Nombre de la empresa</label>
-            <input name="nombre_empresa" type="text" placeholder="Nombre de la empresa" id="txt_name">
-            <label id="location">Descripcion de la empresa</label>
-            <input name="descripcion_empresa" type="text" placeholder="Descripcion de la empresa" id="txt_descripcion">
-            <label id="num-res">URL de la foto de la empresa</label>
-            <input name="foto_empresa" type="text" id="foto" placeholder="Foto de la empresa">
-            <label id="atencion">ID de la empresa</label>
-            <input name="id_empresa" type="text" id="id_empresa" placeholder="Id de la empresa">
-            <button name="guardar_datos" id="save" type="submit" data-bs-toggle="modal" data-bs-target="#modalMsj">Guardar</button>
+            <label id="name-empresa">Nombre del producto</label>
+            <input name="nombre_empresa" type="text" placeholder="Nombre del producto" id="txt_name">
+            <label id="location">Descripcion del producto</label>
+            <input name="descripcion_empresa" type="text" placeholder="Descripcion del producto" id="txt_descripcion">
+            <label id="num-res">URL de la foto del producto</label>
+            <input name="foto_empresa" type="text" id="foto" placeholder="Foto del producto">
+            <label id="atencion">ID del producto</label>
+            <input name="id_empresa" type="text" id="id_empresa" placeholder="Id del producto">
+            <label id="precio">Precio del producto</label>
+            <input name="id_empresa" type="text" id="id_precio" placeholder="Precio">
+            <button name="guardar_datos" id="save_producto" type="submit" data-bs-toggle="modal" data-bs-target="#modalMsj">Guardar</button>
         </form>
 
         <!-- Modal -->
         <div class="modal fade" id="modalMsj" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
+            <div class="modal-dialog">
             <div class="modal-content">
-              <div class="modal-header">
+                <div class="modal-header">
                 <h1 class="modal-title fs-5" id="exampleModalLabel">Empresa guardada en la BD</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-              La empresa fue guardada con exito 🥳 ¿Que te gustaria hacer a continuacion?
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                <button type="button" class="btn btn-primary" onclick="limpiarform()">Registrar otra empresa</button>
-                <a href="./pagina-principal.html" class="btn btn-success">Ir a la pagina principal</a>
-              </div>
             </div>
-          </div>
+                <div class="modal-body">
+                    El producto fue agrefado con exito 🥳 ¿Que te gustaria hacer a continuacion?
+                </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary" onclick="limpiarform()">Registrar otra producto</button>
+                <a href="./pagina-principal.html" class="btn btn-success">Ir a la pagina principal</a>
+            </div>
+            </div>
+            </div>
         </div>
 
     </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
-    <SCript src="../src/js/controlador_empresas.js"></SCript>
+    <SCript src="../src/js/controlador_producto.js"></SCript>
 </body>
 </html>
