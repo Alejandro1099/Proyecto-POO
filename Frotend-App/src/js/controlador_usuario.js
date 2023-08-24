@@ -15,9 +15,12 @@ const renderizarEmpresas = ()=>{
     document.getElementById("contenido").innerHTML = "";
     empresas_lista.forEach(empresa => {
         document.getElementById("contenido").innerHTML+=`
-        <div id="restaurantes">
-            <a href="menu.html"><img src="${empresa.foto}" alt="portada de categoria" id="portada1"></a>
-            <label id="nombre">${empresa.nombre}</label>
+        <div class="card" style="width: 15rem;" id="card_empresa">
+            <img src="${empresa.foto}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">${empresa.nombre}</h5>
+                <a href="menu.html" class="btn btn-primary">ver productos</a>
+            </div>
         </div>`
     });
 }

@@ -26,7 +26,7 @@ const renderizarEmpresas = ()=>{
             <h5 class="card-title">${empresa.nombre}</h5>
             <p class="card-text">${empresa.descripcion}</p>
             <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                <button type="button" class="btn btn-danger">Borrar 🗑</button>
+                <a href="empresas/${empresa._id}"><button type="button" class="btn btn-danger">Borrar 🗑</button></a>
                 <a href="./edit-info.html"><button type="button" class="btn btn-warning">Actualizar 🔃</button></a>
             </div>
             </div>
