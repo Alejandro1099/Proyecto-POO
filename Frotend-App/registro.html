@@ -4,21 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/css/style.css">
-    <title>Registro Usuario</title>
+    <link rel="stylesheet" href="/Frotend-App/src/css/login.css">
+    <title>Registro Fast Delivery</title>
 </head>
 <body>
-    <div class="contenedor">
-        <img src="./src/img/logo.png" alt="">
-        <hr>
-        <form action="/clientes/registrar" method="post">
-            <label for="user" id="name">Nombre de usuario o email</label>
-            <input type="text" id="nombre" placeholder="Ingrese usuario o email">
-            <label for="pass" id="contra">Ingrese la contraseña</label>
-            <input type="text" id="pass" placeholder="Contraseña">
-            <button type="submit">Registrarse</button>
-            <a href="login.html">Iniciar sesion</a>
-            <a href="">HOLA ESTO ES UNA PRUEBA</a>
+    <img src="/Frotend-App/src/img/logo.png" alt="" id="logo">
+
+    <div class="formulario">
+        <form action="/clientes/autenticar" method="post">
+            <label id="nombre">Nombre de usuario o Email</label>
+            <input type="text" placeholder="Nombre de usuario o Email" id="name">
+            <label id="contra">Contraseña</label>
+            <input type="password" placeholder="Contraseña" id="pass">
+            <button><a href="inicio.html">Inciar Sesion</a></button>
+            <a href="login.html"><label id="registrarse">Ya tinenes cuenta, inicia sesion</label></a>
         </form>
     </div>
 </body>
