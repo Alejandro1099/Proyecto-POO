@@ -1,6 +1,5 @@
 body{
     background-color: #5A67A6;
-    ;
 }
 
 #logo{
@@ -8,7 +7,21 @@ body{
     height: 80%;
     position: relative;
     margin-left: 21px;
-    margin-top: 47px;
+    margin-top: -1300px;
+}
+
+#logo-login{
+    width: 75%;
+    height: 45%;
+    position: relative;
+    margin-left: 21px;
+    margin-top: -9px;
+}
+
+.formulario{
+    background-color: #5A67A6;
+    width: 390px;
+    height: 844px;
 }
 
 label{
@@ -74,7 +87,7 @@ button{
     font-weight: 400;
     font-size: 12px;
     line-height: 15px;
-    color: #FFFFFF;
+    color: #000000;
 }
 
 label:hover{

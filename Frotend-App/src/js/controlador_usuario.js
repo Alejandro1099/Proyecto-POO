@@ -30,3 +30,38 @@ cargarEmpresas().then(()=>{
     }).catch((error)=>{
         console.log(`Error al obtener las empresas ${error}`)
 });
+
+//registrar un nuevo usuario
+document.getElementById("form_registro").addEventListener("submit", function(event){
+    event.preventDefault();//evita que se envie la informacion del formulario a otro sitio
+    
+    const nombre = document.getElementById("name").value;
+    const contra = document.getElementById("pass").value;
+
+    const data = {
+        nombre: nombre,
+        pass: contra
+    }
+
+    fetch("http://localhost:3000/usuario", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(data)
+    })
+        .then(response => response.json())
+        .then(result => {
+            console.log("Usuario registrado", result);
+            $('#modalMsj').modal('show'); // Mostrar la ventana modal de éxito
+        })
+        .catch(error => {
+            console.error("No se registro la empresa");
+        });
+});
+
+function limpiarform() {
+    document.getElementById("nombre").value = "";
+    document.getElementById("pass").value = "";
+    $('#modalMsj').modal('hide'); // Ocultar la ventana modal
+}
