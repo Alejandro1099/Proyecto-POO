@@ -41,7 +41,7 @@ cargarProductos().then(()=>{
     renderizarProductos()
     }).catch((error)=>{
         console.log("Error al renderizar los productos", error)
-    });
+});
 
 
 //codigo para guardar un nuevo producto desde el formulario

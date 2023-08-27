@@ -1,4 +1,5 @@
 let empresas_lista;
+let lista_productos;
 
 const cargarEmpresas = async()=>{
     const respuesta = await fetch('http://localhost:3000/empresas', {
@@ -30,6 +31,8 @@ cargarEmpresas().then(()=>{
     }).catch((error)=>{
         console.log(`Error al obtener las empresas ${error}`)
 });
+
+
 
 //registrar un nuevo usuario
 document.getElementById("form_registro").addEventListener("submit", function(event){
